@@ -1,13 +1,45 @@
 # mcp-pdf
 
+<!-- mirror-seo:start -->
+
+**MCP server for PDF tools: merge, split, stamp and read PDF files.** Merge, split, stamp and read PDFs, pure JavaScript.
+
+Works with Claude Desktop, Claude Code, Cursor and any Model Context Protocol client. Runs on your own machine, or hosted with no install.
+
+## Install
+
+**Hosted, nothing to install.** Point an MCP client at `https://mcp.zovo.one/mcp/pdf` over streamable-http and send `Authorization: Bearer <token>`, where the token is a Pro key or a free anonymous one from <https://mcp.zovo.one/mcp/token>.
+
+**Claude Desktop, one click.** Download `pdf.mcpb` from the [latest release](https://github.com/theluckystrike/mcp-servers/releases/latest) and double-click it.
+
+**From source.** The mirror is self-contained: every `@theluckystrike/*` dependency is vendored, so a fresh clone builds with no extra setup.
+
+```sh
+git clone https://github.com/theluckystrike/mcp-pdf.git
+cd mcp-pdf
+npm install && npm run build
+```
+
+Then point your client at the built entry point:
+
+```json
+{
+  "mcpServers": {
+    "pdf": {
+      "command": "node",
+      "args": ["/absolute/path/to/mcp-pdf/dist/index.js"]
+    }
+  }
+}
+```
+
+> `@theluckystrike/mcp-pdf` is **not published on npm yet**, so an `npx -y @theluckystrike/mcp-pdf` command will fail. The three paths above are the working ones and each is exercised by CI.
+
 ![pdf demo](https://raw.githubusercontent.com/theluckystrike/mcp-servers/main/assets/demo-pdf.gif)
-
-**One-click install:** download `pdf.mcpb` from the [latest release](https://github.com/theluckystrike/mcp-servers/releases/latest) and double-click it in Claude Desktop.
-
-**Hosted endpoint (no install):** `https://mcp.zovo.one/mcp/pdf` (streamable-http; send `Authorization: Bearer <Pro key or anonymous token from https://mcp.zovo.one/mcp/token>`).
 
 Read-only mirror of [mcp-servers/servers/pdf](https://github.com/theluckystrike/mcp-servers/tree/main/servers/pdf). See [MIRROR.md](MIRROR.md).
 
+<!-- mirror-seo:end -->
 
 Say "stamp PAID on that invoice and save a copy" or "pull pages 2 to 6 out of this scan and merge them with the contract" and it happens, on your machine, in a second. This MCP server does the small PDF jobs that otherwise send you to a web uploader: merge, split by page range, extract or reorder pages, rotate a sideways scan, stamp `PAID` or `DRAFT` or any text you like, put your business name and VAT id in the footer, count pages across a folder of files, and read a PDF's text back as text. No upload, no account, no native dependency, no office install.
 
