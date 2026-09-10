@@ -1,0 +1,22 @@
+{
+  "name": "mcp-pdf",
+  "version": "0.21.0",
+  "description": "MCP server for PDF tools that merge, split, stamp and read PDF files; merges and splits pages on your own machine. Merge, split, stamp and read PDFs, pure JavaScript.",
+  "settings": [
+    {
+      "name": "mcp.zovo.one token",
+      "description": "A free anonymous token from https://mcp.zovo.one/mcp/token, or your Pro key. One token is one data space, and it is refreshed for another 30 days on every write.",
+      "envVar": "ZOVO_MCP_TOKEN",
+      "sensitive": true
+    }
+  ],
+  "mcpServers": {
+    "pdf": {
+      "httpUrl": "https://mcp.zovo.one/mcp/pdf",
+      "headers": {
+        "Authorization": "Bearer ${ZOVO_MCP_TOKEN}"
+      },
+      "description": "Merge, split, stamp and read PDFs, pure JavaScript."
+    }
+  }
+}
