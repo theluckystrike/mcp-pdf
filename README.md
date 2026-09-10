@@ -2,7 +2,7 @@
 
 <!-- mirror-seo:start -->
 
-**MCP server for PDF tools: merge, split, stamp and read PDF files.** Merge, split, stamp and read PDFs, pure JavaScript.
+**MCP server for PDF tools that merge, split, stamp and read PDF files; merges and splits pages on your own machine.** Merge, split, stamp and read PDFs, pure JavaScript.
 
 Works with Claude Desktop, Claude Code, Cursor and any Model Context Protocol client. Runs on your own machine, or hosted with no install.
 
