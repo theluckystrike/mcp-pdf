@@ -1,6 +1,6 @@
 {
   "name": "mcp-pdf",
-  "version": "0.21.0",
+  "version": "0.22.0",
   "description": "MCP server for PDF tools that merge, split, stamp and read PDF files; merges and splits pages on your own machine. Merge, split, stamp and read PDFs, pure JavaScript.",
   "settings": [
     {
