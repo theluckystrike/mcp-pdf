@@ -295,3 +295,5 @@ anywhere, which is the entire reason this exists.
 MIT licensed. Support: support@zovo.one
 
 Built by [theluckystrike](https://github.com/theluckystrike).
+
+**Listed on the [AI Product Index](https://index.percall.dev/l/zovo-pdf.html)** — live remote endpoint at [mcp.zovo.one/s/pdf](https://mcp.zovo.one/s/pdf), free tier, no signup.
